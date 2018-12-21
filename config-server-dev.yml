@@ -1,0 +1,21 @@
+server:
+  port: 7010
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/changxiaoxincxx/springcloud
+          #username: changxiaoxincxx
+          #password: 
+      label: master   #主线
+        
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password123@localhost:8761/eureka
+logging:
+  level:
+    root: INFO  
